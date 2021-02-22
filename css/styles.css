@@ -1,0 +1,155 @@
+*{
+    font-size: 18px;
+    margin: 0;
+}
+
+/*These next three rules are to create a footer that stays at bottom of page*/
+.page{
+    position: relative; /*sets positions of children relative to it*/
+    min-height: 100vh;
+
+    background-color: #fadacc;
+    color: 	#303030;
+}
+.main-content{
+    padding-bottom: 2.5rem; /*This needs to be the same value that you want footer height*/
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    text-align: center;
+}
+
+#top-bar{
+    height: 20px;
+    background-color: #f19973;
+}
+
+#site-title{
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#inputs{
+    display: flex;
+    flex-direction: column;
+}
+.single-input{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    background-color: #f5f5f5;
+    border-color: #adadad;
+}
+
+.input-field{
+    padding-top: 5px;
+    margin-bottom: 15px;
+}
+
+.selections{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#optional-selection-section{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+hr{
+    max-width: 80%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.radios{
+    max-width: 50%;
+}
+
+.other-input{
+    max-width: 50%;
+}
+
+#num-results-box{
+    max-width: 20%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.the-button{
+    text-align: center;
+    margin-bottom: 20px;
+}
+button{
+    background-color: #f19973;
+    padding: 5px;
+}
+
+.recipe{
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    padding: 5px;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: 	#FFFF66;
+    text-align: center;
+}
+
+.recipe img{
+    width: 30%;
+}
+.recipe-text{
+    width: 70%;
+    position: relative; /*set position of children relative to inside this*/
+    text-align: center;
+}
+.recipe-name{
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: #282828;
+}
+.recipe-specs{
+    display: flex;
+    flex-direction: row;
+    padding: 3px;
+}
+.recipe-specs p{
+    width: 45%;
+}
+.recipe-link{
+    position: absolute; /*these two mean the link will always be at bottom of card*/
+    bottom: 0;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: #0645AD;
+}
+
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+    #inputs{
+        flex-direction: row;
+    }
+    .single-input{
+        margin: 0 30px;
+    }
+    #search-results{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+}

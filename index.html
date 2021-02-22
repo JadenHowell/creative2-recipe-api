@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="/css/styles.css" />
+  <title>Home Cook's Heaven</title>
+</head>
+
+<body>
+  <div class='page'>
+    <div class='main-content'>
+      <div id='top-bar'></div>
+      <h1 id='site-title'>Home Cook's Heaven</h1>
+
+      <div class='selections'>
+        <div id='inputs'>
+          <div class='single-input'>
+            <h2 class='input-label'>What would you like a recipe for?</h2>
+            <input class='input-field' id='recipe-input' type='text' autocomplete='off'>
+          </div>
+          <div class='single-input'>
+            <h2 class='input-label'>Exclude any ingrdients?</h2>
+            <input class='input-field' id='exclusion-input' type='text' autocomplete='off'>
+          </div>  
+        </div>
+
+        <div id='optional-selection-section'>
+          <div class='radios'>
+            <h2 class='input-label'>Any type of diet?</h2>
+            <input type="radio" name="diet" value="balanced" checked="true">
+            <label for="balanced">Balanced</label><br>
+            <input type="radio" name="diet" value="high-protein">
+            <label for="high-protein">High Protein</label><br>
+            <input type="radio" name="diet" value="high-fiber">
+            <label for="high-fiber">High Fiber</label><br>
+            <input type="radio" name="diet" value="low-fat">
+            <label for="low-fat">Low Fat</label><br>
+            <input type="radio" name="diet" value="low-carb">
+            <label for="low-carb">Low Carb</label><br>
+            <input type="radio" name="diet" value="low-sodium">
+            <label for="low-sodium">Low Sodium</label><br>
+          </div>
+
+          <div class='other-input'>
+            <h2 class='input-label'>How many recipes would you like?</h2>
+            <input id='num-results-box' type='number' value="6">
+            <h2 class='input-label'>Looking for desserts?</h2>
+            <input id='dessert-checkbox' type="checkbox" value="on">
+          </div>
+        </div>
+
+      </div>
+
+      <div class='the-button'>
+        <button id='search-button'>FIND SOME RECIPES</button>
+      </div>
+
+      <div id='search-results'>
+      </div>
+    </div>
+
+    <div class='footer'>
+      <hr/>
+      <p>Follow to my GitHub repository 
+        <a href="https://github.com/BYU-CS-260-Winter-2021/lab-2-weather-app-JadenHowell">here</a>
+      </p>
+    </div>
+  </div>
+
+    <script text="type/javascript" src="/scripts/script.js"></script>
+</body>
+
+</html>
